@@ -70,6 +70,15 @@ export default function Projects() {
         <div className="mt-14 grid gap-5 lg:grid-cols-2">
           {projects.map((project, index) => {
             const Icon = icons[index] ?? Code2;
+            const localizedProject = language === "fr" ? {
+              ...project,
+              title: project.titleFr ?? project.title,
+              subtitle: project.subtitleFr ?? project.subtitle,
+              category: project.categoryFr ?? project.category,
+              description: project.descriptionFr ?? project.description,
+              highlights: project.highlightsFr ?? project.highlights,
+              status: project.statusFr ?? project.status,
+            } : project;
 
             return (
               <motion.article
@@ -112,34 +121,34 @@ export default function Projects() {
 
                     <div>
                       <p className="font-mono text-xs uppercase tracking-wider text-cyan-400">
-                        {project.category}
+                        {localizedProject.category}
                       </p>
 
                       <p className="mt-1 text-sm text-slate-500">
-                        {project.subtitle}
+                        {localizedProject.subtitle}
                       </p>
                     </div>
                   </div>
 
                   <span className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs text-slate-400">
-                    {project.status}
+                    {localizedProject.status}
                   </span>
                 </div>
 
                 {/* TITLE */}
 
                 <h3 className="relative mt-9 text-2xl font-semibold">
-                  {project.title}
+                  {localizedProject.title}
                 </h3>
 
                 <p className="relative mt-4 leading-7 text-slate-400">
-                  {project.description}
+                  {localizedProject.description}
                 </p>
 
                 {/* HIGHLIGHTS */}
 
                 <ul className="relative mt-6 grid gap-3 sm:grid-cols-2">
-                  {project.highlights
+                  {localizedProject.highlights
                     .slice(0, 4)
                     .map((highlight) => (
                       <li

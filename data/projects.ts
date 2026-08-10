@@ -8,35 +8,54 @@ export type Project = {
   highlights: string[];
   technologies: string[];
   status: string;
+  titleFr?: string;
+  subtitleFr?: string;
+  categoryFr?: string;
+  descriptionFr?: string;
+  highlightsFr?: string[];
+  statusFr?: string;
 };
 
 export const projects: Project[] = [
   {
     id: 1,
-    slug: "accor-organic-growth",
-    title: "Organic Growth Platform",
-    subtitle: "Hospitality & SEO",
-    category: "Functional · API · CMS",
+    slug: "ecommerce-quality-assurance",
+    title: "E-commerce Quality Assurance",
+    titleFr: "Assurance qualité e-commerce",
+    subtitle: "Product journeys & test automation",
+    subtitleFr: "Parcours clients & automatisation",
+    category: "Functional · API · Automation",
+    categoryFr: "Fonctionnel · API · Automatisation",
     description:
-      "Quality assurance for large-scale destination and editorial experiences, with strong focus on SEO, content validation and responsive behavior.",
+      "Quality assurance for an e-commerce platform covering product discovery, search, cart and online ordering, from user story analysis to release validation.",
+    descriptionFr:
+      "Assurance qualité d’une plateforme e-commerce couvrant la consultation des collections, la recherche produit, le panier et la commande en ligne, de l’analyse des User Stories à la validation avant production.",
     highlights: [
-      "User story analysis",
-      "Functional testing",
-      "Responsive validation",
-      "API and CMS testing",
-      "Regression testing",
-      "Defect management",
+      "User story & refinement analysis",
+      "Test cases in Xray",
+      "Functional, retest & regression",
+      "API testing with Postman",
+      "Defect management in Jira",
+      "Playwright framework from scratch",
+    ],
+    highlightsFr: [
+      "Analyse des User Stories et refinements",
+      "Cas de test dans Xray",
+      "Tests fonctionnels, retests et régression",
+      "Tests API avec Postman",
+      "Gestion des anomalies dans Jira",
+      "Framework Playwright from scratch",
     ],
     technologies: [
-      "AEM",
+      "Playwright",
+      "TypeScript",
+      "POM",
       "Jira",
       "Xray",
       "Postman",
-      "Swagger",
-      "BrowserStack",
-      "Jenkins",
     ],
-    status: "Featured",
+    status: "Current mission",
+    statusFr: "Mission actuelle",
   },
 
   {
