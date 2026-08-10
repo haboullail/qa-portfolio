@@ -52,7 +52,7 @@ export default function Contact() {
             </p>
             <div className="mt-8 space-y-3">
               <ContactItem icon={Mail} label="EMAIL" value="hamza.aboullail@gmail.com" />
-              <ContactItem icon={LinkIcon} label="LINKEDIN" value={language === "fr" ? "Ajoutez votre profil LinkedIn" : "Add your LinkedIn profile"} />
+              <ContactItem icon={LinkIcon} label="LINKEDIN" value="linkedin.com/in/hamza-a-9a4546274" href="https://www.linkedin.com/in/hamza-a-9a4546274/" />
               <ContactItem icon={MapPin} label={language === "fr" ? "LOCALISATION" : "LOCATION"} value="Bois-Colombes, France" />
             </div>
           </div>
@@ -87,8 +87,9 @@ export default function Contact() {
   );
 }
 
-function ContactItem({ icon: Icon, label, value }: { icon: React.ElementType; label: string; value: string }) {
-  return <div className="glass flex items-center gap-4 rounded-xl p-4"><span className="grid h-10 w-10 place-items-center rounded-lg bg-cyan-500/10 text-cyan-400"><Icon size={18} /></span><div><p className="text-[10px] font-semibold tracking-wider text-slate-500">{label}</p><p className="mt-1 text-sm font-semibold text-white">{value}</p></div></div>;
+function ContactItem({ icon: Icon, label, value, href }: { icon: React.ElementType; label: string; value: string; href?: string }) {
+  const content = <><span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-cyan-500/10 text-cyan-400"><Icon size={18} /></span><div className="min-w-0"><p className="text-[10px] font-semibold tracking-wider text-slate-500">{label}</p><p className="mt-1 truncate text-sm font-semibold text-white">{value}</p></div></>;
+  return href ? <a href={href} target="_blank" rel="noreferrer" className="glass flex items-center gap-4 rounded-xl p-4 transition hover:border-cyan-400/30">{content}</a> : <div className="glass flex items-center gap-4 rounded-xl p-4">{content}</div>;
 }
 
 function Field({ label, name, placeholder, type = "text", required = false }: { label: string; name: string; placeholder: string; type?: string; required?: boolean }) {

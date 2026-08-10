@@ -20,14 +20,20 @@ const orbitItems = [
   { label: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg", className: "orbit-item orbit-git" },
 ];
 
+const socialLinks = [
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/hamza-a-9a4546274/", icon: LinkIcon },
+  { label: "GitHub", href: "https://github.com/haboullail", icon: Code2 },
+  { label: "Email", href: "mailto:hamza.aboullail@gmail.com", icon: Mail },
+];
+
 export default function Hero() {
   const { language } = useLanguage();
   return (
     <section id="home" className="relative min-h-screen overflow-hidden pt-[70px]">
       <div className="hero-glow" />
       <aside className="fixed left-4 top-1/2 z-40 hidden -translate-y-1/2 flex-col gap-3 xl:flex">
-        {[LinkIcon, Code2, Mail].map((Icon, index) => (
-          <a key={index} href={index === 2 ? "#contact" : "#"} aria-label="Réseau social" className="grid h-11 w-11 place-items-center rounded-full border border-slate-600/50 bg-slate-800/70 text-slate-400 transition hover:border-cyan-400 hover:text-cyan-300">
+        {socialLinks.map(({ label, href, icon: Icon }) => (
+          <a key={label} href={href} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noreferrer" : undefined} aria-label={label} className="grid h-11 w-11 place-items-center rounded-full border border-slate-600/50 bg-slate-800/70 text-slate-400 transition hover:border-cyan-400 hover:text-cyan-300">
             <Icon size={18} />
           </a>
         ))}
