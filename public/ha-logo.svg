@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="title">
+  <title id="title">Logo HA</title>
+  <defs>
+    <linearGradient id="ring" x1="20" y1="20" x2="180" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67E8F9"/>
+      <stop offset="1" stop-color="#2DD4BF"/>
+    </linearGradient>
+    <linearGradient id="fill" x1="60" y1="45" x2="140" y2="155" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CFFAFE"/>
+      <stop offset="1" stop-color="#5EEAD4"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="92" fill="#10243C" stroke="url(#ring)" stroke-width="5"/>
+  <circle cx="100" cy="100" r="78" fill="none" stroke="#67E8F9" stroke-opacity=".16"/>
+  <path d="M47 55v90h20v-35h36v35h20V55h-20v36H67V55H47Z" fill="url(#fill)"/>
+  <path d="m119 145 32-90h-21l-25 74 14 16Zm5-34h29l-6-18h-17l-6 18Z" fill="url(#ring)"/>
+</svg>
