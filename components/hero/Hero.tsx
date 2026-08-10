@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Code2, Download, LinkIcon, Mail, Search, TestTube2 } from "lucide-react";
+import { Code2, Download, LinkIcon, Mail, Search, TestTube2 } from "lucide-react";
 import { motion } from "motion/react";
 import { useLanguage } from "@/components/LanguageProvider";
 
@@ -49,14 +49,11 @@ export default function Hero() {
           </p>
           <p className="mt-6 max-w-lg text-sm leading-7 text-slate-400 sm:text-base">
             {language === "fr"
-              ? "Je sécurise les expériences numériques grâce aux tests fonctionnels, à la validation API et à l’automatisation. Mon background .NET me permet de collaborer efficacement avec les équipes techniques."
-              : "I build confidence in digital experiences through functional testing, API validation and automation. My .NET background helps me collaborate efficiently with technical teams."}
+              ? "J’ai environ huit ans d’expérience dans l’informatique, dont près de quatre ans en Quality Assurance. J’ai commencé ma carrière comme développeur Full Stack, ce qui me permet aujourd’hui de comprendre les aspects techniques d’une application et de communiquer facilement avec les développeurs. Depuis 2023, je me spécialise dans la qualité logicielle et la validation des applications avant leur mise en production."
+              : "I have around eight years of experience in IT, including nearly four years in Quality Assurance. I started my career as a Full Stack Developer, which now helps me understand the technical aspects of an application and communicate easily with developers. Since 2023, I have specialized in software quality and validating applications before production."}
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <Link href="#projects" className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-cyan-500 to-teal-500 px-6 py-3.5 text-sm font-semibold text-[#04131c] shadow-[0_12px_35px_rgba(6,182,212,.2)] transition hover:-translate-y-0.5">
-              {language === "fr" ? "Voir mes projets" : "View my projects"} <ArrowRight size={17} />
-            </Link>
             <Link href="/cv/qa-engineer-cv.pdf" className="inline-flex items-center justify-center gap-2 rounded-lg border border-cyan-400/35 px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-cyan-500/10">
               {language === "fr" ? "Télécharger mon CV" : "Download my CV"} <Download size={16} />
             </Link>

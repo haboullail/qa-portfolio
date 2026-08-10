@@ -1,11 +1,8 @@
 "use client";
 
-import Link from "next/link";
-
 import { motion } from "motion/react";
 
 import {
-  ArrowUpRight,
   CheckCircle2,
   Code2,
   Globe2,
@@ -52,17 +49,6 @@ export default function Projects() {
             </p>
           </div>
 
-          <Link
-            href="/projects"
-            className="group inline-flex items-center gap-2 text-sm font-medium text-cyan-400 transition hover:text-cyan-300"
-          >
-            {language === "fr" ? "Voir tous les projets" : "View all projects"}
-
-            <ArrowUpRight
-              size={17}
-              className="transition group-hover:translate-x-1 group-hover:-translate-y-1"
-            />
-          </Link>
         </div>
 
         {/* PROJECT GRID */}
@@ -180,21 +166,6 @@ export default function Projects() {
                     ))}
                 </div>
 
-                {/* LINK */}
-
-                <div className="relative mt-8 border-t border-white/10 pt-5">
-                  <Link
-                    href={`/projects/${project.slug}`}
-                    className="group/link inline-flex items-center gap-2 text-sm font-medium text-white"
-                  >
-                    {language === "fr" ? "Voir l’étude de cas" : "View case study"}
-
-                    <ArrowUpRight
-                      size={16}
-                      className="text-cyan-400 transition group-hover/link:translate-x-1 group-hover/link:-translate-y-1"
-                    />
-                  </Link>
-                </div>
               </motion.article>
             );
           })}
