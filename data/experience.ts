@@ -12,8 +12,8 @@ export type Experience = {
 export const experiences: Experience[] = [
   {
     id: 1,
-    period: "2018 - 2024",
-    role: "Consultant Full Stack .NET",
+    period: "2018 - 2023",
+    role: "Full Stack .NET Consultant",
     company: "Banque, télécom & services",
     type: "Development",
     summary: "Six années de développement d’applications Web, Desktop et API qui constituent aujourd’hui un véritable avantage dans l’analyse qualité.",
@@ -27,8 +27,8 @@ export const experiences: Experience[] = [
   },
   {
     id: 2,
-    period: "2024 - 2026",
-    role: "Analyste QA - Tests fonctionnels & automatisés",
+    period: "2023 - 2026",
+    role: "QA Analyst – Functional Testing & Test Automation",
     company: "INTALIO / MAIF",
     type: "Quality Assurance",
     summary: "Garantie de la qualité d’une plateforme de gestion électronique des documents : fonctionnel, API, automatisation et suivi des anomalies.",
@@ -43,7 +43,7 @@ export const experiences: Experience[] = [
   {
     id: 3,
     period: "2026 - Aujourd’hui",
-    role: "Analyste QA",
+    role: "QA Engineer & DevOps",
     company: "Maison de luxe (confidentiel)",
     type: "Quality Assurance",
     summary: "Validation fonctionnelle et automatisée d’un écosystème e-commerce de luxe intégrant AEM, DAM et les parcours de paiement Adyen.",
@@ -51,8 +51,9 @@ export const experiences: Experience[] = [
       "Analyse des exigences et règles métier",
       "Tests fonctionnels, régression et gestion des anomalies",
       "Automatisation avec Playwright et TypeScript",
+      "Intégration continue et pratiques DevOps",
       "Validation des composants et contenus AEM",
     ],
-    technologies: ["Playwright", "TypeScript", "Cucumber", "Postman", "Jira", "Xray", "AEM", "GitLab CI"],
+    technologies: ["Playwright", "TypeScript", "Cucumber", "Postman", "Jira", "Xray", "AEM", "Jenkins", "Docker", "GitLab CI"],
   },
 ];

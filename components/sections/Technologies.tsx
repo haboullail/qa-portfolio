@@ -7,6 +7,8 @@ const technologies = [
   { name: "Selenium", category: "Automation", icon: "selenium/selenium-original.svg" },
   { name: "Postman", category: "API Testing", icon: "postman/postman-original.svg" },
   { name: "Jira", category: "QA Management", icon: "jira/jira-original.svg" },
+  { name: "Jenkins", category: "CI/CD", icon: "jenkins/jenkins-original.svg" },
+  { name: "Docker", category: "DevOps", icon: "docker/docker-original.svg" },
   { name: "C#", category: "Language", icon: "csharp/csharp-original.svg" },
   { name: "Java", category: "Language", icon: "java/java-original.svg" },
   { name: "TypeScript", category: "Language", icon: "typescript/typescript-original.svg" },
@@ -14,6 +16,7 @@ const technologies = [
   { name: "SQL Server", category: "Database", icon: "microsoftsqlserver/microsoftsqlserver-original.svg" },
   { name: "Azure", category: "Cloud & CI/CD", icon: "azure/azure-original.svg" },
   { name: "GitLab", category: "CI/CD", icon: "gitlab/gitlab-original.svg" },
+  { name: "GitHub", category: "Version Control", icon: "github/github-original.svg" },
   { name: "Git", category: "Version Control", icon: "git/git-original.svg" },
 ];
 

@@ -17,8 +17,8 @@ export default function HeroButtons() {
       </Link>
 
       <Link
-        href="/cv/qa-engineer-cv.pdf"
-        download
+        href="/cv/hamza-aboullail-cv.pdf"
+        download="CV_Hamza_Aboullail.pdf"
         className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-5 py-3 font-medium text-white transition hover:bg-white/10"
       >
         <Download size={18} />

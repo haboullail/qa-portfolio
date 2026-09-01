@@ -5,7 +5,7 @@ import { useLanguage } from "@/components/LanguageProvider";
 const clients = [
   { name: "Orange", domain: "orange.com" },
   { name: "CIH Bank", domain: "cihbank.ma" },
-  { name: "Grupo Aval", domain: "grupoaval.com" },
+  { name: "Grupo Avalon", domain: "grupoaval.com" },
   { name: "Attijariwafa Bank", domain: "attijariwafabank.com" },
   { name: "Crédit Agricole", domain: "credit-agricole.com" },
   { name: "MAIF", domain: "maif.fr" },

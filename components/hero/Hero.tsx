@@ -51,7 +51,10 @@ export default function Hero() {
             <span className="block">Aboullail</span>
           </h1>
           <p className="mt-6 text-lg font-medium text-slate-300">
-            {language === "fr" ? "Je suis " : "I am a "}<span className="font-bold text-cyan-300">QA Analyst</span>
+            {language === "fr" ? "Je suis " : "I am a "}<span className="font-bold text-cyan-300">QA Engineer &amp; DevOps</span>
+          </p>
+          <p className="mt-2 font-mono text-sm font-semibold uppercase tracking-wider text-cyan-400">
+            QA Engineer | Test Automation | DevOps &amp; CI/CD
           </p>
           <p className="mt-6 max-w-lg text-sm leading-7 text-slate-400 sm:text-base">
             {language === "fr"
@@ -60,7 +63,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <Link href="/cv/qa-engineer-cv.pdf" className="inline-flex items-center justify-center gap-2 rounded-lg border border-cyan-400/35 px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-cyan-500/10">
+            <Link href="/cv/hamza-aboullail-cv.pdf" download="CV_Hamza_Aboullail.pdf" className="inline-flex items-center justify-center gap-2 rounded-lg border border-cyan-400/35 px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-cyan-500/10">
               {language === "fr" ? "Télécharger mon CV" : "Download my CV"} <Download size={16} />
             </Link>
           </div>
@@ -73,8 +76,8 @@ export default function Hero() {
           <div className="absolute inset-[29%] grid place-items-center overflow-hidden rounded-full border-2 border-cyan-500/70 bg-gradient-to-br from-[#213a55] to-[#111d33] shadow-[0_0_80px_rgba(6,182,212,.18)]">
             <div className="text-center">
               <img src="/ha-logo.svg" alt="Logo Hamza Aboullail" className="mx-auto h-28 w-28 drop-shadow-2xl" />
-              <p className="mt-4 text-sm font-bold text-white">QA Analyst</p>
-              <p className="mt-1 text-[10px] uppercase tracking-[.18em] text-slate-500">Test · Automate · Improve</p>
+              <p className="mt-4 text-sm font-bold text-white">QA Engineer &amp; DevOps</p>
+              <p className="mt-1 text-[10px] uppercase tracking-[.18em] text-slate-500">Test · Automate · Deploy</p>
             </div>
           </div>
           {orbitItems.map((item) => <span key={item.label} className={item.className} title={item.label}><img src={item.icon} alt={item.label} /></span>)}

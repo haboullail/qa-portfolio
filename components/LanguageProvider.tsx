@@ -12,7 +12,14 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const saved = window.localStorage.getItem("portfolio-language");
-    if (saved === "fr" || saved === "en") setLanguageState(saved);
+    if (saved !== "fr" && saved !== "en") return;
+
+    const restoreLanguage = window.setTimeout(() => {
+      setLanguageState(saved);
+      document.documentElement.lang = saved;
+    }, 0);
+
+    return () => window.clearTimeout(restoreLanguage);
   }, []);
 
   const setLanguage = (next: Language) => {

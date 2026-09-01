@@ -24,9 +24,11 @@ export default function About() {
             </p>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-              {language === "fr" ? "Du développement logiciel" : "From software development"}
-              <span className="gradient-text"> {language === "fr" ? "à l’ingénierie qualité." : "to quality engineering."}</span>
+              QA Engineer <span className="gradient-text">&amp; DevOps.</span>
             </h2>
+            <p className="mt-5 font-mono text-sm font-semibold uppercase tracking-wider text-cyan-400">
+              QA Engineer | Test Automation | DevOps &amp; CI/CD
+            </p>
           </div>
 
           <div className="space-y-6 text-lg leading-8 text-slate-400">
@@ -39,7 +41,7 @@ export default function About() {
             </p>
 
             <p>
-              {language === "fr" ? "Aujourd’hui, j’interviens sur les tests fonctionnels, la validation API, la régression et l’automatisation, en collaboration étroite avec les développeurs, Product Owners et équipes métier." : "Today, I work across functional testing, API validation, regression testing and test automation, while collaborating closely with developers, Product Owners and business teams."}
+              {language === "fr" ? "Aujourd’hui, en tant que QA Engineer & DevOps, j’interviens sur les tests fonctionnels, les tests API, l’automatisation avec Playwright et Selenium, ainsi que les pratiques CI/CD avec Jenkins, Docker et Git/GitHub." : "Today, as a QA Engineer & DevOps, I work across functional testing, API testing, automation with Playwright and Selenium, and CI/CD practices using Jenkins, Docker and Git/GitHub."}
             </p>
           </div>
         </div>

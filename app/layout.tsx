@@ -7,9 +7,9 @@ import { LanguageProvider } from "@/components/LanguageProvider";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Hamza Aboullail | QA Analyst",
+  title: "Hamza Aboullail | QA Engineer & DevOps",
   description:
-    "Portfolio de Hamza Aboullail, QA Analyst spécialisé en tests fonctionnels, API et automatisation.",
+    "Portfolio de Hamza Aboullail — QA Engineer spécialisé en tests fonctionnels, tests API, automatisation et DevOps CI/CD.",
 };
 
 export default function RootLayout({
