@@ -107,7 +107,7 @@ export default function QALab() {
               onClick={() => setActiveTab(tab)}
               className={`rounded-xl border px-4 py-2 text-sm transition ${
                 isActive
-                  ? "border-cyan-400/40 bg-cyan-500/10 text-white"
+                  ? "border-blue-500/50 bg-blue-600/15 text-white"
                   : "border-white/10 text-slate-400 hover:bg-white/5 hover:text-white"
               }`}
             >

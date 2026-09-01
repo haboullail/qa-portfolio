@@ -6,7 +6,7 @@ export default function HeroButtons() {
     <div className="mt-9 flex flex-col gap-3 sm:flex-row">
       <Link
         href="#projects"
-        className="group inline-flex items-center justify-center gap-2 rounded-xl bg-indigo-500 px-5 py-3 font-medium text-white transition hover:bg-indigo-400"
+        className="group inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-3 font-medium text-white transition hover:bg-blue-500"
       >
         Explore my work
 

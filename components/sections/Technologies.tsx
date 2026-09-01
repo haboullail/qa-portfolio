@@ -40,8 +40,8 @@ export default function Technologies() {
 
         <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
           {technologies.map((technology, index) => (
-            <article key={technology.name} className="tech-card group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.035] p-5 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/35 hover:bg-cyan-400/[0.04]" style={{ animationDelay: `${index * 60}ms` }}>
-              <span className="grid h-12 w-12 place-items-center rounded-xl bg-[#111d34] ring-1 ring-white/[0.06]">
+            <article key={technology.name} className="tech-card group relative overflow-hidden rounded-2xl border border-[#1e3a5f]/70 bg-[#0d1b2a] p-5 transition duration-300 hover:-translate-y-1 hover:border-blue-500/50 hover:bg-blue-600/[0.05]" style={{ animationDelay: `${index * 60}ms` }}>
+              <span className="grid h-12 w-12 place-items-center rounded-xl bg-[#07111f] ring-1 ring-[#1e3a5f]/70">
                 <img src={`${baseUrl}${technology.icon}`} alt={`${technology.name} logo`} className="h-8 w-8 object-contain transition duration-300 group-hover:scale-110" />
               </span>
               <h3 className="mt-5 text-sm font-bold text-white">{technology.name}</h3>

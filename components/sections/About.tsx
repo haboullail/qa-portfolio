@@ -82,7 +82,7 @@ function AboutCard({
   description,
 }: AboutCardProps) {
   return (
-    <article className="glass rounded-2xl p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30">
+    <article className="glass rounded-2xl p-6 transition duration-300 hover:-translate-y-1 hover:border-blue-500/50">
       <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-cyan-500/10 text-cyan-400">
         <Icon size={21} />
       </div>

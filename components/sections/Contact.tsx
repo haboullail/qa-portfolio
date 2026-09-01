@@ -31,7 +31,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="border-t border-white/5 bg-[#151e36] py-28">
+    <section id="contact" className="border-t border-[#1e3a5f]/50 bg-[#0d1b2a] py-28">
       <div className="container">
         <div className="text-center">
           <p className="section-kicker">Contact</p>
@@ -68,10 +68,10 @@ export default function Contact() {
             </div>
             <label className="mt-5 block text-xs font-semibold text-slate-200">
               Message
-              <textarea name="message" required rows={5} placeholder={language === "fr" ? "Parlez-moi de votre projet..." : "Tell me about your project..."} className="mt-2 w-full resize-none rounded-xl border border-slate-600/50 bg-[#071626] px-4 py-3 text-sm text-white outline-none transition placeholder:text-slate-600 focus:border-cyan-500" />
+              <textarea name="message" required rows={5} placeholder={language === "fr" ? "Parlez-moi de votre projet..." : "Tell me about your project..."} className="mt-2 w-full resize-none rounded-xl border border-[#1e3a5f] bg-[#07111f] px-4 py-3 text-sm text-white outline-none transition placeholder:text-slate-600 focus:border-blue-500" />
             </label>
 
-            <button type="submit" disabled={submitState === "sending"} className="mt-5 w-full rounded-xl bg-gradient-to-r from-cyan-500 to-teal-500 py-3.5 text-sm font-bold text-[#04131c] shadow-[0_10px_30px_rgba(6,182,212,.2)] transition hover:-translate-y-0.5 disabled:cursor-wait disabled:opacity-60">
+            <button type="submit" disabled={submitState === "sending"} className="mt-5 w-full rounded-xl bg-blue-600 py-3.5 text-sm font-bold text-slate-50 shadow-[0_10px_30px_rgba(37,99,235,.22)] transition hover:-translate-y-0.5 hover:bg-blue-500 disabled:cursor-wait disabled:opacity-60">
               {submitState === "sending" ? (language === "fr" ? "Envoi en cours..." : "Sending...") : (language === "fr" ? "Envoyer le message" : "Send message")}
             </button>
 
@@ -89,9 +89,9 @@ export default function Contact() {
 
 function ContactItem({ icon: Icon, label, value, href }: { icon: React.ElementType; label: string; value: string; href?: string }) {
   const content = <><span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-cyan-500/10 text-cyan-400"><Icon size={18} /></span><div className="min-w-0"><p className="text-[10px] font-semibold tracking-wider text-slate-500">{label}</p><p className="mt-1 truncate text-sm font-semibold text-white">{value}</p></div></>;
-  return href ? <a href={href} target="_blank" rel="noreferrer" className="glass flex items-center gap-4 rounded-xl p-4 transition hover:border-cyan-400/30">{content}</a> : <div className="glass flex items-center gap-4 rounded-xl p-4">{content}</div>;
+  return href ? <a href={href} target="_blank" rel="noreferrer" className="glass flex items-center gap-4 rounded-xl p-4 transition hover:border-blue-500/50">{content}</a> : <div className="glass flex items-center gap-4 rounded-xl p-4">{content}</div>;
 }
 
 function Field({ label, name, placeholder, type = "text", required = false }: { label: string; name: string; placeholder: string; type?: string; required?: boolean }) {
-  return <label className="block text-xs font-semibold text-slate-200">{label}<input name={name} required={required} type={type} placeholder={placeholder} className="mt-2 w-full rounded-xl border border-slate-600/50 bg-[#071626] px-4 py-3 text-sm text-white outline-none transition placeholder:text-slate-600 focus:border-cyan-500" /></label>;
+  return <label className="block text-xs font-semibold text-slate-200">{label}<input name={name} required={required} type={type} placeholder={placeholder} className="mt-2 w-full rounded-xl border border-[#1e3a5f] bg-[#07111f] px-4 py-3 text-sm text-white outline-none transition placeholder:text-slate-600 focus:border-blue-500" /></label>;
 }

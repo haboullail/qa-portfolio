@@ -30,7 +30,7 @@ export default function HeroContent() {
         Available for new opportunities
       </div>
 
-      <p className="mb-4 font-mono text-sm uppercase tracking-[0.22em] text-indigo-400">
+      <p className="mb-4 font-mono text-sm uppercase tracking-[0.22em] text-cyan-400">
         QA Engineer · Functional · API · Automation
       </p>
 

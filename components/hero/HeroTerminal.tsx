@@ -46,14 +46,14 @@ export default function HeroTerminal() {
       }}
       className="relative"
     >
-      <div className="absolute -inset-10 -z-10 bg-indigo-500/10 blur-3xl" />
+      <div className="absolute -inset-10 -z-10 bg-blue-600/10 blur-3xl" />
 
       <div className="glass overflow-hidden rounded-2xl">
         <div className="flex items-center justify-between border-b border-white/10 px-5 py-4">
           <div className="flex items-center gap-3">
             <Terminal
               size={19}
-              className="text-indigo-400"
+              className="text-cyan-400"
             />
 
             <span className="font-mono text-sm text-slate-200">
@@ -69,7 +69,7 @@ export default function HeroTerminal() {
         </div>
 
         <div className="border-b border-white/10 bg-black/20 px-5 py-4 font-mono text-sm">
-          <span className="text-indigo-400">$</span>{" "}
+          <span className="text-cyan-400">$</span>{" "}
 
           <span className="text-slate-300">
             npx playwright test

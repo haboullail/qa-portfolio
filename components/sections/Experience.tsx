@@ -69,8 +69,8 @@ export default function ExperienceSection() {
                     <div
                       className={`relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border transition ${
                         isSelected
-                          ? "border-cyan-400 bg-cyan-500 text-slate-950"
-                          : "border-white/10 bg-[#0b1020] text-slate-500"
+                          ? "border-blue-500 bg-blue-600 text-slate-50"
+                          : "border-[#1e3a5f] bg-[#0d1b2a] text-slate-500"
                       }`}
                     >
                       {experience.type === "Development" ? (
@@ -83,8 +83,8 @@ export default function ExperienceSection() {
                     <div
                       className={`w-full rounded-2xl border p-5 transition ${
                         isSelected
-                          ? "border-cyan-400/30 bg-cyan-500/5"
-                          : "border-white/10 bg-white/[0.02] hover:bg-white/[0.04]"
+                          ? "border-blue-500/50 bg-blue-600/[0.08]"
+                          : "border-[#1e3a5f]/70 bg-[#0d1b2a] hover:bg-blue-600/[0.05]"
                       }`}
                     >
                       <p className="font-mono text-xs uppercase tracking-wider text-slate-500">

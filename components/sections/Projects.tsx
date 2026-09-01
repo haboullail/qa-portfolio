@@ -85,12 +85,12 @@ export default function Projects() {
                   duration: 0.5,
                   delay: index * 0.08,
                 }}
-                className="group glass relative min-h-[360px] overflow-hidden rounded-2xl p-7 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+                className="group glass relative min-h-[360px] overflow-hidden rounded-2xl p-7 transition duration-300 hover:-translate-y-1 hover:border-blue-500/50"
               >
                 {/* DECORATION */}
 
                 <div
-                  className="pointer-events-none absolute -right-20 -top-20 h-48 w-48 rounded-full bg-cyan-500/10 blur-3xl transition duration-500 group-hover:bg-cyan-500/20"
+                  className="pointer-events-none absolute -right-20 -top-20 h-48 w-48 rounded-full bg-blue-600/10 blur-3xl transition duration-500 group-hover:bg-blue-600/15"
                   aria-hidden="true"
                 />
                 <span className="absolute right-6 top-4 text-6xl font-black text-cyan-400/[0.06]">

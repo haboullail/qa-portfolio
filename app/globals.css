@@ -3,16 +3,17 @@
 :root {
   --font-geist-sans: "Segoe UI", Arial, Helvetica, sans-serif;
   --font-geist-mono: "Cascadia Code", "SFMono-Regular", Consolas, monospace;
-  --background: #1b2542;
-  --background-secondary: #151e36;
+  --background: #07111f;
+  --background-secondary: #0d1b2a;
   --foreground: #f8fafc;
   --muted: #94a3b8;
 
-  --card: #202d49;
-  --border: rgba(94, 234, 212, 0.14);
+  --card: #0d1b2a;
+  --border: #1e3a5f;
 
-  --primary: #06b6d4;
-  --primary-light: #5eead4;
+  --primary: #2563eb;
+  --primary-light: #60a5fa;
+  --accent: #22d3ee;
 
   --success: #22c55e;
 }
@@ -52,7 +53,7 @@ button {
 }
 
 .glass {
-  background: rgba(31, 44, 71, 0.9);
+  background: rgba(13, 27, 42, 0.92);
 
   border: 1px solid var(--border);
 
@@ -63,9 +64,9 @@ button {
 .gradient-text {
   background: linear-gradient(
     90deg,
-    #ffffff,
-    #67e8f9,
-    #5eead4
+    var(--foreground),
+    var(--primary),
+    var(--accent)
   );
 
   -webkit-background-clip: text;
@@ -98,7 +99,7 @@ button {
 
   text-transform: uppercase;
 
-  color: #22d3ee;
+  color: var(--accent);
 }
 
 .section-title {
@@ -129,12 +130,12 @@ button {
   right: -140px;
   top: 70px;
   pointer-events: none;
-  background: radial-gradient(circle, rgba(96, 87, 255, .14), transparent 68%);
+  background: radial-gradient(circle, rgba(37, 99, 235, .16), transparent 68%);
 }
 
 .orbit {
   position: absolute;
-  border: 1px dashed rgba(34, 211, 238, .2);
+  border: 1px dashed rgba(34, 211, 238, .18);
   border-radius: 9999px;
 }
 
@@ -148,9 +149,9 @@ button {
   width: 48px;
   height: 48px;
   border-radius: 9999px;
-  border: 1px solid rgba(34, 211, 238, .28);
-  background: #263451;
-  color: #67e8f9;
+  border: 1px solid rgba(30, 58, 95, .95);
+  background: var(--card);
+  color: var(--accent);
   font: 700 11px var(--font-geist-mono);
   box-shadow: 0 12px 30px rgba(0, 0, 0, .24);
   animation: orbit-float 3.8s ease-in-out infinite;
